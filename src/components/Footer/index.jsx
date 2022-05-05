@@ -31,7 +31,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="flex flex-col items-center justify-center">
-                        <ReactSVG className="2-60"  src={logo}/>
+                        <ReactSVG className="w-40 ml-24 md:ml-1"  src={logo}/>
                         <h1 className="hidden md:block text-blue_dark text-xs my-2 text-center">Ullamcorper orci, venenatis ac euismod vel purus tortor rhoncu.</h1>
                     </div>
                 </div>

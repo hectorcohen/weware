@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import logo from '../../assets/logos/logo.svg'
-import menuicon from '../../assets/icons/menu-bars.png'
+import {GoThreeBars} from 'react-icons/go'
 import { ReactSVG } from 'react-svg'
 
 export default function Header() {
@@ -24,10 +24,10 @@ export default function Header() {
 
                 <div className="flex justify-between items-center">
                     <button className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" ref={toggle}>
-                        <ReactSVG className='md:ml-5' onClick={() => handleMenuButton()} src={menuicon} alt="menu icon" />
+                        <GoThreeBars onClick={() => handleMenuButton()}/>
                     </button>
-                    <img src={logo} alt="weware-logo" />
-                    <button className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden md:mt-2" />
+                    <ReactSVG src={logo} />
+                    <GoThreeBars className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden md:mt-2" />
                 </div>
 
                 <div className="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" ref={navbar}>
