@@ -96,7 +96,7 @@ export default function App() {
           <h1 className="container mx-auto text-blue_dark md:w-1/2 flex flex-col text-2xl text-center my-2 font-bold md:text-3xl">
             Engage your remote team
           </h1>
-          <p className="container text-blue_dark mx-auto  text-base text-justify md:w-full md:text-lg">
+          <p className="container text-blue_dark mx-auto  text-base text-justify md:text-xl md:w-1/2 md:text-lg">
             Remote work is challenging when knowledge is spread across slack, emails, documents and
             spreadsheets. It is especially challenging when trying to find information and engage
             with your remote team. <br />
@@ -106,7 +106,7 @@ export default function App() {
           </p>
         </div>
         <div className="container flex p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
             <img src={assets.assetOne} alt="assets" />
             <div className="flex flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Announcements</h1>
@@ -119,7 +119,7 @@ export default function App() {
           </div>
         </div>
         <div className="container flex p-6">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-9">
             <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Wiki</h1>
               <h2 className="text-base text-justify md:text-xl">
@@ -132,7 +132,7 @@ export default function App() {
           </div>
         </div>
         <div className="container flex p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
             <img src={assets.assetThree} alt="assets" />
             <div className="flex flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Team directory</h1>
@@ -144,7 +144,7 @@ export default function App() {
           </div>
         </div>
         <div className="container flex p-6">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-9">
             <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Recognition</h1>
               <h2 className="text-base text-justify md:text-xl">
@@ -158,8 +158,8 @@ export default function App() {
       </div>
       <div className="container mx-auto flex flex-col items-center justify-between mt-4 p-6">
         <h1 className="container text-blue_dark flex flex-col text-xl md:text-2xl text-center my-2 leading-8 font-light md:w-1/2 ">
-          “We&aposve had less confusion with task responsibilities and deadlines, which has
-          increased productivity and efficiency.”
+          “We've had less confusion with task responsibilities and deadlines, which has increased
+          productivity and efficiency.”
         </h1>
       </div>
       <div className="container mx-auto flex flex-col items-center justify-between mt-4 p-6">
