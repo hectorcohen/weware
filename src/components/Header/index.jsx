@@ -46,7 +46,7 @@ export default function Header() {
           </a>
           <a
             href="/"
-            className="rounded-lg p-2 lg:px-2 md:mx-1 text-verde text-center  outline outline-offset-2 outline-verde mt-1 md:mt-0  md:ml-1 "
+            className="rounded-lg p-2 lg:px-2 md:mx-1 text-verde text-center  outline outline-offset-2 outline-verde mt-1 md:mt-0  md:ml-1 sm:rounded-lg"
           >
             Get early access
           </a>
