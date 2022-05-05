@@ -14,7 +14,7 @@ import Footer from '../../components/Footer';
 export default function App() {
   const { scrollYProgress } = useViewportScroll();
   /* It's a framer motion hook that takes the scrollYProgress value and maps it to a new value. */
-  const scale = useTransform(scrollYProgress, [0, 1], [0.7, 2]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
 
   return (
     <>
@@ -91,70 +91,63 @@ export default function App() {
           <img className="h-10 md:12" src={images.mesh} alt="bucket logo" />
         </div>
       </div>
-      <div className="container mx-auto flex flex-col items-center justify-between mt-4 p-6">
-        <div className="container mx-auto flex flex-col items-center justify-between mt-2 p-10">
+      <div className="container mx-auto flex flex-col items-center p-10">
+        <h1 className="container mx-auto text-blue_dark md:w-1/2 flex flex-col text-2xl text-center my-2 font-bold md:text-3xl">
+          Engage your remote team
+        </h1>
+        <h1 className="text-justify text-blue_dark text-base md:text-xl md:w-1/2">
+          Remote work is challenging when knowledge is spread across slack, emails, documents and
+          spreadsheets. It is especially challenging when trying to find information and engage with
+          your remote team. <br />
+          <b>Weware solves all that</b>. Create your team directory with profiles, share company
+          announcements, create knowledge wiki where you share important information and processes.
+          Best of all, weware is also a place to engage and recognize effort.
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
+        <img src={assets.assetOne} alt="assets" />
+        <div className="flex flex-col justify-center">
           <h1 className="container mx-auto text-blue_dark md:w-1/2 flex flex-col text-2xl text-center my-2 font-bold md:text-3xl">
-            Engage your remote team
+            Announcements
           </h1>
-          <p className="container text-blue_dark mx-auto  text-base text-justify md:text-xl md:w-1/2 md:text-lg">
-            Remote work is challenging when knowledge is spread across slack, emails, documents and
-            spreadsheets. It is especially challenging when trying to find information and engage
-            with your remote team. <br />
-            <b>Weware solves all that</b>. Create your team directory with profiles, share company
-            announcements, create knowledge wiki where you share important information and
-            processes. Best of all, weware is also a place to engage and recognize effort.
-          </p>
+          <h1 className="text-justify text-blue_dark text-base md:text-xl">
+            Your entire team in one place, with Engage your team with company wide announcements
+            that entice engagement. The team homepage reveals everything going on with your team.
+          </h1>
         </div>
-        <div className="container flex p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
-            <img src={assets.assetOne} alt="assets" />
-            <div className="flex flex-col justify-center items-center text-center text-blue_dark">
-              <h1 className="font-bold text-lg md:text-2xl">Announcements</h1>
-              <h2 className="text-base text-justify md:text-xl">
-                Your entire team in one place, with Engage your team with company wide announcements
-                that entice engagement. The team homepage reveals everything going on with your
-                team.
-              </h2>
-            </div>
-          </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
+        <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
+          <h1 className="font-bold text-lg md:text-2xl">Wiki</h1>
+          <h2 className="text-base text-justify md:text-xl">
+            Create and share knowledge with your team. Whether it be company processes,
+            presentations, content your team has created, anything! Find anything directly from
+            Slack too.
+          </h2>
         </div>
-        <div className="container flex p-6">
-          <div className="grid md:grid-cols-2 gap-9">
-            <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
-              <h1 className="font-bold text-lg md:text-2xl">Wiki</h1>
-              <h2 className="text-base text-justify md:text-xl">
-                Create and share knowledge with your team. Whether it be company processes,
-                presentations, content your team has created, anything! Find anything directly from
-                Slack too.
-              </h2>
-            </div>
-            <img src={assets.assetsTwo} alt="assets" />
-          </div>
+        <img src={assets.assetsTwo} alt="assets" />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
+        <img src={assets.assetThree} alt="assets" />
+        <div className="flex flex-col justify-center">
+          <h1 className="container mx-auto text-blue_dark md:w-1/2 flex flex-col text-2xl text-center my-2 font-bold md:text-3xl">
+            Team directory
+          </h1>
+          <h1 className="text-justify text-blue_dark text-base md:text-xl">
+            Your entire team in one place, with profile information, history, notes and more. You no
+            longer need a clunky separate HR app.
+          </h1>
         </div>
-        <div className="container flex p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
-            <img src={assets.assetThree} alt="assets" />
-            <div className="flex flex-col justify-center items-center text-center text-blue_dark">
-              <h1 className="font-bold text-lg md:text-2xl">Team directory</h1>
-              <h2 className="text-base text-justify md:text-xl">
-                Your entire team in one place, with profile information, history, notes and more.
-                You no longer need a clunky separate HR app.
-              </h2>
-            </div>
-          </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
+        <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
+          <h1 className="font-bold text-lg md:text-2xl">Recognition</h1>
+          <h2 className="text-base text-justify md:text-xl">
+            Anyone can thank, recognize co workers for their effort. The activity feeds reveal all
+            the great things happening on your team.
+          </h2>
         </div>
-        <div className="container flex p-6">
-          <div className="grid md:grid-cols-2 gap-9">
-            <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
-              <h1 className="font-bold text-lg md:text-2xl">Recognition</h1>
-              <h2 className="text-base text-justify md:text-xl">
-                Anyone can thank, recognize co workers for their effort. The activity feeds reveal
-                all the great things happening on your team.
-              </h2>
-            </div>
-            <img src={assets.assetFor} alt="assets" />
-          </div>
-        </div>
+        <img src={assets.assetFor} alt="assets" />
       </div>
       <div className="container mx-auto flex flex-col items-center justify-between mt-4 p-6">
         <h1 className="container text-blue_dark flex flex-col text-xl md:text-2xl text-center my-2 leading-8 font-light md:w-1/2 ">
@@ -187,46 +180,15 @@ export default function App() {
               />
               <button
                 type="button"
-                className="h-12 w-2/3 bg-verde transition duration-150 my-2 ease-in-out flex justify-center items-center  hover:text-blue_dark rounded text-white px-4 sm:px-4 py-6 sm:py-4 text-base rounded-lg"
+                className="h-12 w-2/3 bg-verde transition duration-150 my-2 ease-in-out flex justify-center items-center  hover:text-blue_dark rounded text-white px-4 sm:px-4 py-6 sm:py-4 text-xs md:text-base rounded-lg"
               >
                 Get early access
               </button>
             </div>
           </div>
         </div>
-      </div>
-      <div className="container mx-auto flex flex-col items-center justify-between mt-4 p-6">
-        <h1 className="text-blue_dark font-bold text-xl text-center md:text-3xl">FQA</h1>
       </div>
       <Accordion />
-      <div className="flex flex-col justify-center items-center p-6 border border-['#D9DAE5']">
-        <div className="flex flex-col justify-between items-center md:flex-row">
-          <div className="flex flex-col m-2">
-            <h1 className="text-blue_dark font-bold text-xl text-center md:text-left">
-              Sign up for product updates:
-            </h1>
-            <h2 className="text-blue_dark text-base text-center md:w-[400px] md:text-left">
-              Ullamcorper orci, eu venenatis ac euismod vel purus tortor rhoncus mauri.
-            </h2>
-          </div>
-          <div className="flex flex-col m-2 md:flex-row">
-            <input
-              className="h-12 text-center my-2 mx-1 placeholder-blue_dark border border-blue_dark rounded-lg"
-              type="email"
-              placeholder="Your email address"
-              required
-            />
-            <div className="flex justify-center items-center">
-              <button
-                type="button"
-                className="h-12 bg-verde transition duration-150 my-2 ease-in-out flex justify-center items-center  hover:text-blue_dark rounded text-white px-4 sm:px-4 py-6 sm:py-4 text-base rounded-lg"
-              >
-                Get early access
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       <Footer />
     </>
   );

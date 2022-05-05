@@ -4,7 +4,7 @@ import logo from '../../assets/logos/logo.svg';
 
 export default function Footer() {
   return (
-    <footer className="p-2 bg-white sm:p-10">
+    <footer className="p-2 bg-white sm:p-10 border border-['#D9DAE5']">
       <div className="container mx-auto flex flex-col items-center justify-between mt-4">
         <div className="grid grid-cols-2 w-full md:grid-cols-4 gap-20 md:gap-18">
           <div>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto flex flex-col items-center justify-center my-12 md:hidden">
-        <ReactSVG className="w-52" src={logo} />
+        <ReactSVG src={logo} />
         <h1 className="text-blue_dark text-xs my-4 text-center w-1/2">
           Ullamcorper orci, venenatis ac euismod vel purus tortor rhoncu.
         </h1>
