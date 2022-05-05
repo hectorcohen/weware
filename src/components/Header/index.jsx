@@ -46,7 +46,7 @@ export default function Header() {
           </a>
           <button
             type="button"
-            className="text-verde px-4 mx-2 p-2 text-center  outline outline-offset-1 outline-verde rounded mt-1"
+            className="p-2 md:p-1 outline outline-offset-1 outline-verde flex justify-center items-center mt-1 transition duration-150 ease-in-out lg:font-bold  hover:text-blue_dark  text-verde px-4 sm:px-4 py-2 sm:py-4 text-sm font-bold rounded-lg"
           >
             Get early access
           </button>
