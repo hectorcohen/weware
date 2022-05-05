@@ -4,52 +4,46 @@ import logo from '../../assets/logos/logo.svg';
 
 export default function Footer() {
   return (
-    <footer className="p-6 bg-white sm:p-10">
+    <footer className="p-2 bg-white sm:p-10">
       <div className="container mx-auto flex flex-col items-center justify-between mt-4">
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-20 md:gap-20">
+        <div className="grid grid-cols-2 w-full md:grid-cols-4 gap-20 md:gap-18">
           <div>
             <h1 className="text-blue_dark font-bold">Social media</h1>
-            <ul>
-              <li className="text-blue_dark cursor-pointer hover:indigo-800">
-                <a href="/">Discord</a>
-              </li>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Twitter</a>
-              </li>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Instagram</a>
-              </li>
-            </ul>
+            <div className="w-6 h-1 bg-verde my-2" />
+            <div className="text-blue_dark">
+              <h1 className="cursor-pointer my-2">Discord</h1>
+              <h1 className="cursor-pointer my-2">Twitter</h1>
+              <h1 className="cursor-pointer my-2">Instagram</h1>
+            </div>
           </div>
           <div>
-            <h1 className="text-blue_dark font-bold">Campany</h1>
-            <ul>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Community</a>
-              </li>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Blog</a>
-              </li>
-            </ul>
+            <h1 className="text-blue_dark font-bold">Company</h1>
+            <div className="w-6 h-1 bg-verde my-2" />
+            <div className="text-blue_dark">
+              <h1 className="cursor-pointer my-2">Community</h1>
+              <h1 className="cursor-pointer my-2">Blog</h1>
+            </div>
           </div>
           <div>
             <h1 className="text-blue_dark font-bold">Resources</h1>
-            <ul>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Contact us</a>
-              </li>
-              <li className="text-blue_dark cursor-pointer">
-                <a href="/">Blog</a>
-              </li>
-            </ul>
+            <div className="w-6 h-1 bg-verde my-2" />
+            <div className="text-blue_dark">
+              <h1 className="cursor-pointer my-2">Contact us</h1>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="hidden md:flex flex-col  items-center">
             <ReactSVG className="w-40 ml-24 md:ml-1" src={logo} />
-            <h1 className="hidden md:block text-blue_dark text-xs my-2 text-center">
+            <h1 className="hidden md:block text-blue_dark text-xs my-2 text-justify">
               Ullamcorper orci, venenatis ac euismod vel purus tortor rhoncu.
             </h1>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto flex flex-col items-center justify-center my-12 md:hidden">
+        <ReactSVG className="w-52" src={logo} />
+        <h1 className="text-blue_dark text-xs my-4 text-center w-1/2">
+          Ullamcorper orci, venenatis ac euismod vel purus tortor rhoncu.
+        </h1>
       </div>
     </footer>
   );

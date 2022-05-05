@@ -41,7 +41,7 @@ export default function App() {
           </div>
         </div>
         <div className="container mx-auto flex flex-col items-center justify-between my-12 p-6">
-          <h1 className="text-center text-blue_dark text-base md:text-xl md:w-1/2">
+          <h1 className="text-justify text-blue_dark text-base md:text-xl md:w-1/2">
             <b>Weware means:</b>Easy to find knowledge, content and proceses. Announcements, team
             engagement, recognition and profiles. 🙌
           </h1>
@@ -96,7 +96,7 @@ export default function App() {
           <h1 className="container mx-auto text-blue_dark md:w-1/2 flex flex-col text-2xl text-center my-2 font-bold md:text-3xl">
             Engage your remote team
           </h1>
-          <p className="container text-blue_dark mx-auto  text-base text-center md:w-full md:text-lg">
+          <p className="container text-blue_dark mx-auto  text-base text-justify md:w-full md:text-lg">
             Remote work is challenging when knowledge is spread across slack, emails, documents and
             spreadsheets. It is especially challenging when trying to find information and engage
             with your remote team. <br />
@@ -110,7 +110,7 @@ export default function App() {
             <img src={assets.assetOne} alt="assets" />
             <div className="flex flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Announcements</h1>
-              <h2 className="text-base md:text-xl">
+              <h2 className="text-base text-justify md:text-xl">
                 Your entire team in one place, with Engage your team with company wide announcements
                 that entice engagement. The team homepage reveals everything going on with your
                 team.
@@ -122,7 +122,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Wiki</h1>
-              <h2 className="text-base md:text-xl">
+              <h2 className="text-base text-justify md:text-xl">
                 Create and share knowledge with your team. Whether it be company processes,
                 presentations, content your team has created, anything! Find anything directly from
                 Slack too.
@@ -136,7 +136,7 @@ export default function App() {
             <img src={assets.assetThree} alt="assets" />
             <div className="flex flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Team directory</h1>
-              <h2 className="text-base md:text-xl">
+              <h2 className="text-base text-justify md:text-xl">
                 Your entire team in one place, with profile information, history, notes and more.
                 You no longer need a clunky separate HR app.
               </h2>
@@ -147,7 +147,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="flex order-last md:order-first  flex-col justify-center items-center text-center text-blue_dark">
               <h1 className="font-bold text-lg md:text-2xl">Recognition</h1>
-              <h2 className="text-base md:text-xl">
+              <h2 className="text-base text-justify md:text-xl">
                 Anyone can thank, recognize co workers for their effort. The activity feeds reveal
                 all the great things happening on your team.
               </h2>
