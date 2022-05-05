@@ -19,7 +19,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <div className="bg-gray-100 dark:bg-transparent">
+      <div className="bg-white">
         <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
           <div className="container flex relative p-10">
             <div className="flex w-full">
