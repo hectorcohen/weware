@@ -44,12 +44,12 @@ export default function Header() {
           >
             Blog
           </a>
-          <a
-            href="/"
-            className="rounded-lg p-2 lg:px-2 md:mx-1 text-verde text-center  outline outline-offset-1 outline-verde mt-1 md:mt-0  md:ml-1 sm:rounded-lg md:rounded-lg"
+          <button
+            type="button"
+            className="text-verde mx-2 p-2 text-center  outline outline-offset-1 outline-verde rounded"
           >
             Get early access
-          </a>
+          </button>
         </div>
       </div>
     </nav>
