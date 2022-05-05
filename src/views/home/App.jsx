@@ -189,6 +189,34 @@ export default function App() {
         </div>
       </div>
       <Accordion />
+      <div className="flex flex-col justify-center items-center p-2 border border-['#D9DAE5']">
+        <div className="flex flex-col justify-between items-center md:flex-row">
+          <div className="flex flex-col m-2">
+            <h1 className="text-blue_dark font-bold text-xl text-center md:text-left">
+              Sign up for product updates:
+            </h1>
+            <h2 className="text-blue_dark text-base text-center md:w-[400px] md:text-left">
+              Ullamcorper orci, eu venenatis ac euismod vel purus tortor rhoncus mauri.
+            </h2>
+          </div>
+          <div className="container flex flex-col m-2 md:flex-row">
+            <input
+              className="h-12 w-full text-center my-2 mx-1 placeholder-blue_dark border border-blue_dark rounded-lg md:w-1/2 text-xs"
+              type="email"
+              placeholder="Your email address"
+              required
+            />
+            <div className="flex justify-center items-center">
+              <button
+                type="button"
+                className="text-xs h-12 w-1/2 bg-verde flex justify-center items-center transition duration-150 my-2 ease-in-out hover:text-blue_dark rounded-lg text-white px-4 sm:px-4 py-6 md:w-full"
+              >
+                Get early access
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </>
   );
