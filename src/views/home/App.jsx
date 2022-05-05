@@ -128,7 +128,7 @@ export default function App() {
                 Slack too.
               </h2>
             </div>
-            <img src={assets.assetTwo} alt="assets" />
+            <img src={assets.assetsTwo} alt="assets" />
           </div>
         </div>
         <div className="container flex p-6">
