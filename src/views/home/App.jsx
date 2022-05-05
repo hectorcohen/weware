@@ -54,7 +54,7 @@ export default function App() {
             />
             <button
               type="button"
-              className="h-12 m-2 w-1/2 bg-verde flex justify-center items-center transition duration-150 ease-in-out lg:font-bold  hover:text-blue_dark rounded text-white px-4 sm:px-4 py-2 sm:py-4 text-sm font-bold rounded-lg"
+              className="h-12 m-2 w-1/2 bg-verde flex justify-center items-center transition duration-150 ease-in-out lg:font-bold  hover:text-blue_dark  text-white px-4 sm:px-4 py-2 sm:py-4 text-sm font-bold rounded-lg"
             >
               Get early access
             </button>

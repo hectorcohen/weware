@@ -25,7 +25,7 @@ export default function Header() {
             className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
             ref={toggle}
           >
-            <GoThreeBars onClick={() => handleMenuButton()} />
+            <GoThreeBars className="w-6 h-6" onClick={() => handleMenuButton()} />
           </button>
           <ReactSVG src={logo} />
           <GoThreeBars className="px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden md:mt-2" />
