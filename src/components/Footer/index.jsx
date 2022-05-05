@@ -1,5 +1,6 @@
 import React from "react"
 import logo from '../../assets/logos/logo.svg'
+import { ReactSVG } from "react-svg"
 
 
 export default function Footer() {
@@ -30,7 +31,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="flex flex-col items-center justify-center">
-                        <img className="w-60" src={logo} alt="logo" />
+                        <ReactSVG className="2-60"  src={logo}/>
                         <h1 className="hidden md:block text-blue_dark text-xs my-2 text-center">Ullamcorper orci, venenatis ac euismod vel purus tortor rhoncu.</h1>
                     </div>
                 </div>
