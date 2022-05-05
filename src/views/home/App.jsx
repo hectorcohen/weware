@@ -200,12 +200,14 @@ export default function App() {
             </h2>
           </div>
           <div className="container flex flex-col m-2 md:flex-row">
-            <input
-              className="h-12 w-full text-center my-2 mx-1 placeholder-blue_dark border border-blue_dark rounded-lg md:w-1/2 text-xs"
-              type="email"
-              placeholder="Your email address"
-              required
-            />
+            <div className="flex justify-center items-center">
+              <input
+                className="h-12 w-3/4 text-center my-2 placeholder-blue_dark border border-blue_dark rounded-lg md:w-full mx-9 text-xs"
+                type="email"
+                placeholder="Your email address"
+                required
+              />
+            </div>
             <div className="flex justify-center items-center">
               <button
                 type="button"
